@@ -1,4 +1,4 @@
-# 📚 Universal Document RAG AI Assistant
+# 📚 MicroRAG
 
 An elegant, high-performance Retrieval-Augmented Generation (RAG) system built with **Streamlit**, **LangChain**, and **Groq** (Llama 3.3).
 
@@ -21,8 +21,8 @@ This application allows users to upload custom documents (PDF, TXT, or Markdown)
 
 1. **Clone the repository** (or download the project folder):
     ```bash
-    git clone <your-repo-link>
-    cd <your-project-folder>
+    git clone [https://github.com/alsabur20.MicroRAG](https://github.com/alsabur20/MicroRAG)
+    cd MicroRAG
     ```
 2. **Create a virtual environment** (Recommended):
     ```bash

@@ -1,0 +1,11 @@
+# Streamlit secrets (Crucial security step)
+.streamlit/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local environments
+venv/
+env/
+.env

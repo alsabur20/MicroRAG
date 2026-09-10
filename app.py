@@ -46,16 +46,15 @@ with st.sidebar:
     selected_model = st.selectbox(
         "Groq Model",
         options=[
-            "llama-3.1-8b-instant",
-            "llama-3.3-70b-versatile",
-            "llama-3.3-70b-specdec",
-            "llama-3.2-3b-preview",
-            "llama-3.2-1b-preview",
-            "mixtral-8x7b-32768",
-            "gemma2-9b-it",
+            "openai/gpt-oss-120b",
+            "openai/gpt-oss-20b",
+            "qwen/qwen3.6-27b",
+            "qwen/qwen3.8-27b",
+            "groq/compound",
+            "groq/compound-mini",
         ],
         index=0,
-        help="Select a model available on your Groq tier. 'llama-3.1-8b-instant' is recommended for free-tier accounts.",
+        help="Select an active model from your Groq console.",
     )
 
     st.divider()

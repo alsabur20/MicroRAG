@@ -1,6 +1,6 @@
 # 📚 MicroRAG
 
-An elegant, high-performance Retrieval-Augmented Generation (RAG) system built with **Streamlit**, **LangChain**, and **Groq** (Llama 3.3).
+An elegant, high-performance Retrieval-Augmented Generation (RAG) system built with **Streamlit**, **LangChain**, and **Groq**.
 
 This application allows users to upload custom documents (PDF, TXT, or Markdown) and have seamless, real-time contextual conversations backed by semantic vector search using FAISS and HuggingFace embeddings.
 

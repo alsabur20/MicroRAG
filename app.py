@@ -43,6 +43,21 @@ with st.sidebar:
     else:
         api_key = st.text_input("Enter Groq API Key", type="password")
 
+    selected_model = st.selectbox(
+        "Groq Model",
+        options=[
+            "llama-3.1-8b-instant",
+            "llama-3.3-70b-versatile",
+            "llama-3.3-70b-specdec",
+            "llama-3.2-3b-preview",
+            "llama-3.2-1b-preview",
+            "mixtral-8x7b-32768",
+            "gemma2-9b-it",
+        ],
+        index=0,
+        help="Select a model available on your Groq tier. 'llama-3.1-8b-instant' is recommended for free-tier accounts.",
+    )
+
     st.divider()
 
     st.header("📄 Upload Document")
@@ -139,7 +154,11 @@ if user_input:
 
         try:
             os.environ["GROQ_API_KEY"] = api_key
-            llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+            llm = ChatGroq(
+                model=selected_model,
+                groq_api_key=api_key,
+                temperature=0,
+            )
 
             retriever = st.session_state.vector_store.as_retriever(
                 search_type="similarity",

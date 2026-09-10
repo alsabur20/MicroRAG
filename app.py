@@ -46,15 +46,15 @@ with st.sidebar:
     selected_model = st.selectbox(
         "Groq Model",
         options=[
-            "openai/gpt-oss-120b",
             "openai/gpt-oss-20b",
+            "groq/compound-mini",
             "qwen/qwen3.6-27b",
+            "openai/gpt-oss-120b",
             "qwen/qwen3.8-27b",
             "groq/compound",
-            "groq/compound-mini",
         ],
         index=0,
-        help="Select an active model from your Groq console.",
+        help="Fast & lightweight models suitable for free-tier and hobby projects.",
     )
 
     st.divider()
